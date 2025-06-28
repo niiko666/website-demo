@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guns N' Roses - Fotos</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="pictures-gallery-body">
+
+  <header class="header-main">
+    <div class="logo-title">
+      <img src="../img/GunsnRosesLogo.png" alt="Logo" class="logo-img">
+      <span class="logo-text">GUNS AND ROSES</span>
+    </div>
+    <div class="main-title">
+      <h1>GUNS AND ROSES - Fotos</h1>
+    </div>
+    <button class="burger" id="burger">&#9776;</button>
+    <nav class="nav" id="nav-menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="../biografia/biografia.html" class="dropbtn">Biografia</a>
+          <div class="dropdown-content">
+            <a href="../biografia/biografia.html">Biografia</a>
+            <a href="../biografia/trofeos.html">Premios y reconocimientos</a>
+            <a href="../biografia/integrantes.html">Miembros de la banda</a>
+          </div>
+        <li><a href="discografia.html">Todo</a></li>
+        <li><a href="discografia-videos.html">Videos</a></li>
+        <li><a href="../Colaboraciones/colaboraciones.html">Colaboraciones</a></li>
+        <li><a href="../tour/tour.html">Tour</a></li>
+        <li><a href="../store/store.html">Store</a></li>
+        <li><a href="../contactos/contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="pictures-title">Salt Lake City - 10/29/19</h2>
+    <div class="pictures-gallery-container" id="pictures-gallery-saltlake">
+      <div class="media-thumb" data-type="image" data-title="Salt Lake City 1"
+        data-src="img/salt_lake_2019/Salt_Lake_1_2019.jpg">
+        <img src="img/salt_lake_2019/Salt_Lake_1_2019.jpg" alt="Salt Lake City 1" class="pictures-item" tabindex="0">
+      </div>
+      <div class="media-thumb" data-type="image" data-title="Salt Lake City 2"
+        data-src="img/salt_lake_2019/Salt_Lake_2_2019.jpg">
+        <img src="img/salt_lake_2019/Salt_Lake_2_2019.jpg" alt="Salt Lake City 2" class="pictures-item" tabindex="0">
+      </div>
+      <div class="media-thumb" data-type="image" data-title="Salt Lake City 3"
+        data-src="img/salt_lake_2019/Salt_Lake_3_2019.jpg">
+        <img src="img/salt_lake_2019/Salt_Lake_3_2019.jpg" alt="Salt Lake City 3" class="pictures-item" tabindex="0">
+      </div>
+      <div class="media-thumb" data-type="image" data-title="Salt Lake City 4"
+        data-src="img/salt_lake_2019/Salt_Lake_4_2019.jpg">
+        <img src="img/salt_lake_2019/Salt_Lake_4_2019.jpg" alt="Salt Lake City 4" class="pictures-item" tabindex="0">
+      </div>
+    </div>
+
+
+    <h2 class="pictures-title">New Orleans - 10/25/19</h2>
+    <div class="pictures-gallery-container" id="pictures-gallery-neworleans">
+      <div class="media-thumb" data-type="image" data-title="New Orleans 1"
+        data-src="img/new_orleans_2019/New_Orleans_2019.jpg">
+        <img src="img/new_orleans_2019/New_Orleans_2019.jpg" alt="New Orleans 1" class="pictures-item" tabindex="0">
+      </div>
+      <div class="media-thumb" data-type="image" data-title="New Orleans 2"
+        data-src="img/new_orleans_2019/New_Orleans_2_2019.jpg">
+        <img src="img/new_orleans_2019/New_Orleans_2_2019.jpg" alt="New Orleans 2" class="pictures-item" tabindex="0">
+      </div>
+      <div class="media-thumb" data-type="image" data-title="New Orleans 3"
+        data-src="img/new_orleans_2019/New_Orleans_3_2019.jpg">
+        <img src="img/new_orleans_2019/New_Orleans_3_2019.jpg" alt="New Orleans 3" class="pictures-item" tabindex="0">
+      </div>
+      <div class="media-thumb" data-type="image" data-title="New Orleans 4"
+        data-src="img/new_orleans_2019/New_Orleans_4_2019.jpg">
+        <img src="img/new_orleans_2019/New_Orleans_4_2019.jpg" alt="New Orleans 4" class="pictures-item" tabindex="0">
+      </div>
+    </div>
+
+
+    <!-- Lightbox modal solo imágenes -->
+    <div class="media-lightbox" id="pictures-lightbox" hidden>
+      <span class="media-lightbox-close">&times;</span>
+      <button class="media-lightbox-prev">&#8592;</button>
+      <button class="media-lightbox-next">&#8594;</button>
+      <div class="media-lightbox-title" id="pictures-lightbox-title"></div>
+      <div id="pictures-lightbox-media"></div>
+    </div>
+  </main>
+  <footer>
+    <div class="left-footer">
+      <div class="logo-title">
+        <img src="../img/GunsnRosesLogo.png" alt="Logo" style="width:2.5em; margin-bottom:0.5em;">
+        <p>Official Guns N’ Roses Site</p>
+      </div>
+      <form id="footerSubscribeForm" autocomplete="off">
+        <input type="text" placeholder="Your Name" name="footerName" required>
+        <input type="email" placeholder="Your Email" name="footerEmail" required>
+        <div class="suscribe">
+          <button type="submit">Subscribe</button>
+        </div>
+        <div id="footerSubscribeSuccess" style="color:#e2be46; margin-top:0.5em;min-height:1.5em;"></div>
+      </form>
+      <p>
+        <a href="mailto:info@gunsnroses.com">info@gunsnroses.com</a><br>
+        Los Angeles, CA
+      </p>
+    </div>
+    <div class="center-footer">
+      <p>COPYRIGHT © 2025 Guns N' Roses</p>
+      <a href="https://www.gunsnroses.com/help">Help.</a>
+      <a href="https://www.gunsnroses.com/newsletter">Newsletter.</a>
+      <a href="https://www.gunsnroses.com/terms">Terms of use.</a>
+      <a href="https://www.gunsnroses.com/privacy">Privacy Policy.</a>
+      <a
+        href="https://privacyportal-cdn.onetrust.com/dsarwebform/ba6f9c5b-dda5-43bd-bac4-4e06afccd928/6b7d937a-c177-47f1-a452-ed5683b2d73e.html">Do
+        not sell or share my Personal Information.</a>
+      <a href="#">Guns N' Roses is managed by OneTap.</a>
+      <p class="memo">Armand Butts Crump III and Tommy Mark, forever in our hearts.</p>
+    </div>
+    <div class="right-footer">
+      <ul>
+        <li><a href="https://www.instagram.com/gunsnroses/" class="fa fa-instagram"></a></li>
+        <li><a href="https://music.apple.com/us/artist/guns-n-roses/106621" class="fa fa-music"></a></li>
+        <li><a href="https://www.youtube.com/@gunsnroses" class="fa fa-youtube"></a></li>
+        <li><a href="https://www.facebook.com/gunsnroses" class="fa fa-facebook"></a></li>
+        <li><a href="https://x.com/gunsnroses" class="fa fa-twitter"></a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="../js/scripts.js"></script>
+</body>
+
+</html>

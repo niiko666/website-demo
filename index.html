@@ -1,0 +1,176 @@
+<!-- ============================= -->
+<!-- === PÁGINA PRINCIPAL ROOT === -->
+<!-- ============================= -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TPO FrontEnd Guns&Roses</title>
+  <!-- === CSS PRINCIPAL === -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- === IMPORTANTE: root-body para el fondo de rosas === -->
+
+<body class="root-body">
+  <!-- ============================== -->
+  <!-- === HEADER + NAVBAR PRINCIPAL -->
+  <!-- ============================== -->
+  <header class="header-main">
+    <div class="logo-title">
+      <img src="img/GunsnRosesLogo.png" alt="Logo" class="logo-img">
+      <span class="logo-text">GUNS AND ROSES</span>
+    </div>
+    <div class="main-title">
+      <h1>GUNS AND ROSES</h1>
+    </div>
+    <button class="burger" id="burger">&#9776;</button>
+    <!-- Navbar principal con dropdowns -->
+    <nav class="nav" id="nav-menu">
+      <ul>
+        <li class="dropdown">
+          <a href="discografia/discografia.html" class="dropbtn">Discografia</a>
+          <div class="dropdown-content">
+            <a href="discografia/discografia.html">Discografia</a>
+            <a href="discografia/discografia-videos.html">Videos</a>
+            <a href="discografia/discografia-fotos.html">Fotos</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="biografia/biografia.html" class="dropbtn">Biografia</a>
+          <div class="dropdown-content">
+            <a href="biografia/biografia.html">Biografia</a>
+            <a href="biografia/trofeos.html">Premios y reconocimientos</a>
+            <a href="biografia/integrantes.html">Miembros de la banda</a>
+          </div>
+        </li>
+        <li><a href="Colaboraciones/colaboraciones.html">Colaboraciones</a></li>
+        <li><a href="tour/tour.html">Tour</a></li>
+        <li><a href="Store/store.html">Store</a></li>
+        <li><a href="contactos/contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================== -->
+  <!-- === MODAL DE TOURS NUEVOS ==== -->
+  <!-- ============================== -->
+  <div id="tours-modal" class="tours-modal">
+    <div class="tours-modal-content">
+      <button id="close-tours-modal" class="tours-modal-close" aria-label="Close">×</button>
+      <h2>Nuevos tours disponibles!</h2>
+      <p>Consulta las últimas fechas y lugares de la gira de Guns N' Roses.</p>
+      <a href="tour/tour.html" class="tours-modal-btn">Ver mas!</a>
+    </div>
+  </div>
+
+  <!-- ============================== -->
+  <!-- === CONTENIDO PRINCIPAL ====== -->
+  <!-- ============================== -->
+  <div class="contenido">
+    <!-- === ZONA DE SLIDERS LATERALES === -->
+    <aside class="side-container">
+      <div class="slider-section">
+        <div class="slider-title">Ropa</div>
+        <div class="product-slider" data-category="clothing">
+          <button class="slider-btn slider-btn-left" aria-label="Prev">&#10094;</button>
+          <div class="slider-track"></div>
+          <button class="slider-btn slider-btn-right" aria-label="Next">&#10095;</button>
+        </div>
+        <a href="store/store.html" class="view-more">Ver más</a>
+      </div>
+      <div class="slider-section">
+        <div class="slider-title">Musica</div>
+        <div class="product-slider" data-category="music">
+          <button class="slider-btn slider-btn-left" aria-label="Prev">&#10094;</button>
+          <div class="slider-track"></div>
+          <button class="slider-btn slider-btn-right" aria-label="Next">&#10095;</button>
+        </div>
+        <a href="store/store.html" class="view-more">Ver más</a>
+      </div>
+      <div class="slider-section">
+        <div class="slider-title">Accesorios</div>
+        <div class="product-slider" data-category="extras">
+          <button class="slider-btn slider-btn-left" aria-label="Prev">&#10094;</button>
+          <div class="slider-track"></div>
+          <button class="slider-btn slider-btn-right" aria-label="Next">&#10095;</button>
+        </div>
+        <a href="store/store.html" class="view-more">Ver más</a>
+      </div>
+    </aside>
+    <!-- === ZONA DE SHOWCASE CENTRAL === -->
+    <main class="main-content">
+      <div class="showcase-container">
+        <h2>Biografia</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/hpGGUYJ49-s"
+            title="Guns N&#39; Roses: History of the Hard Rock Band"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="biografia/biografia.html" class="view-more">Ver más</a>
+      </div>
+
+      <div class="showcase-container">
+        <h2>Discografia</h2>
+        <div class="gallery">
+          <button class="gallery-btn" id="prevGalleryBtn">&#10094;</button>
+          <img id="galleryImage" src="img/big-1.jpg" alt="Gallery Image">
+          <button class="gallery-btn" id="nextGalleryBtn">&#10095;</button>
+        </div>
+        <a href="discografia/discografia.html" class="view-more">Ver más</a>
+      </div>
+    </main>
+  </div>
+
+  <!-- ============================== -->
+  <!-- === FOOTER PRINCIPAL ========= -->
+  <!-- ============================== -->
+  <footer>
+    <div class="left-footer">
+      <div class="logo-title">
+        <img src="img/GunsnRosesLogo.png" alt="Logo" style="width:2.5em; margin-bottom:0.5em;">
+        <p>Official Guns N’ Roses Site</p>
+      </div>
+      <form id="footerSubscribeForm" autocomplete="off">
+        <input type="text" placeholder="Your Name" name="footerName" required>
+        <input type="email" placeholder="Your Email" name="footerEmail" required>
+        <div class="suscribe">
+          <button type="submit">Subscribe</button>
+        </div>
+        <div id="footerSubscribeSuccess" style="color:#e2be46; margin-top:0.5em;min-height:1.5em;"></div>
+      </form>
+      <p>
+        <a href="mailto:info@gunsnroses.com">info@gunsnroses.com</a><br>
+        Los Angeles, CA
+      </p>
+    </div>
+    <div class="center-footer">
+      <p>Copyright © 2025 Guns N' Roses</p>
+      <a href="https://www.gunsnroses.com/help">Help.</a>
+      <a href="https://www.gunsnroses.com/newsletter">Newsletter.</a>
+      <a href="https://www.gunsnroses.com/terms">Terms of use.</a>
+      <a href="https://www.gunsnroses.com/privacy">Privacy Policy.</a>
+      <a href="https://privacyportal-cdn.onetrust.com/dsarwebform/ba6f9c5b-dda5-43bd-bac4-4e06afccd928/6b7d937a-c177-47f1-a452-ed5683b2d73e.html">Do not sell or share my Personal Information.</a>
+      <a href="#">Guns N' Roses is managed by OneTap.</a>
+      <p class="memo">Armand Butts Crump III and Tommy Mark, forever in our hearts.</p>
+    </div>
+    <div class="right-footer">
+      <ul>
+        <li><a href="https://www.instagram.com/gunsnroses/" class="fa fa-instagram"></a></li>
+        <li><a href="https://music.apple.com/us/artist/guns-n-roses/106621" class="fa fa-music"></a></li>
+        <li><a href="https://www.youtube.com/user/GunsNRosesVEVO" class="fa fa-youtube"></a></li>
+        <li><a href="https://www.facebook.com/gunsnroses" class="fa fa-facebook"></a></li>
+        <li><a href="https://x.com/gunsnroses" class="fa fa-twitter"></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- === SCRIPTS PRINCIPALES === -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
